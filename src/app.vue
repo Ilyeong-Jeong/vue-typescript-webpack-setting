@@ -1,11 +1,17 @@
 <template>
-  <div>test</div>
+  <layout></layout>
 </template>
 
-<script>
+<script lang="ts">
 
-  export default {
+  import Vue from 'vue'
 
-  }
+  import Layout from "./page/layout/index.vue"
+
+  export default Vue.extend({
+    components: {
+      "layout": Layout
+    }
+  })
 
 </script>

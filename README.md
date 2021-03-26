@@ -33,5 +33,4 @@ npm run prod
 ```
 
 ## ToDo
-- vuex 기본 설정
 - typescript 기본 설정

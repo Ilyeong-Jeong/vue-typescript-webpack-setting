@@ -5,7 +5,7 @@ const HtmlWebPackPlugin = require("html-webpack-plugin");
 
 module.exports = {
 
-  entry: './src/main.js',
+  entry: './src/main.ts',
 
   output: {                                          
     path         : path.join(__dirname, '/dist'),
@@ -55,8 +55,11 @@ module.exports = {
       },
 
       {
-        test  : /\.ts?$/,
-        loader: 'ts-loader',
+        test   : /\.ts?$/,
+        loader : 'ts-loader',
+        options: {
+          appendTsSuffixTo: [/\.vue$/],
+        }
       },
 
       {
