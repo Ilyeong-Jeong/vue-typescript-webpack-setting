@@ -3,8 +3,6 @@ import Vuex from 'vuex';
 
 Vue.use(Vuex);
 
-const mutationTypes = {};
-
 const state     = {};
 const getters   = {};
 const actions   = {};

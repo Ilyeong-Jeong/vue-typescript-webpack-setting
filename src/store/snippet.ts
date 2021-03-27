@@ -6,6 +6,8 @@ const mutationTypes = {
   //INIT: "INIT"
 }
 
+// export type State = { initData: Array<any> }
+
 export default {
   
   state () {
