@@ -31,6 +31,3 @@ npm run start (npm run dev)
 ```
 npm run prod
 ```
-
-## ToDo
-- typescript 기본 설정
