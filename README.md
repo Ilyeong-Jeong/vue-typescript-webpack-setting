@@ -31,3 +31,5 @@ npm run start (npm run dev)
 ```
 npm run prod
 ```
+
+:gear: Vue.extend 방식 사용, Vue.component 방식을 이용하여 클래스 스타일로 구성 가능.
