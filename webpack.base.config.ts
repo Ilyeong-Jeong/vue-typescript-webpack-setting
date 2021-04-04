@@ -1,9 +1,10 @@
-const path = require("path");
+import * as path from 'path';
+import * as webpack from 'webpack';
 
 const VueLoaderPlugin   = require('vue-loader/lib/plugin');
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 
-module.exports = {
+const webpackBaseConfig: webpack.Configuration = {
 
   entry: './src/main.ts',
 
@@ -112,3 +113,5 @@ module.exports = {
   ]
 
 }
+
+export default webpackBaseConfig;

@@ -1,8 +1,9 @@
-const express = require('express');
-const path = require("path");
+import * as path    from "path";
+import * as express from "express";
 
-const app = express();
-const port = process.env.PORT || 3000; 
+const app: express.Application = express();
+
+const port: number = Number(process.env.PORT) || 3000; 
 
 app.use('/', express.static(__dirname + '/dist'));
 

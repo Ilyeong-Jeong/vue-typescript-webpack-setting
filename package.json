@@ -4,10 +4,10 @@
   "description": "Vue TypeScript Boilerplate",
   "main": "index.js",
   "scripts": {
-    "dev": "NODE_ENV=development webpack serve --config ./webpack.dev.config.js",
+    "dev": "NODE_ENV=development webpack serve --config ./webpack.dev.config.ts",
     "start": "npm run dev",
-    "build": "NODE_ENV=production webpack --config ./webpack.prod.config.js",
-    "prod": "NODE_ENV=production node server",
+    "build": "NODE_ENV=production webpack --config ./webpack.prod.config.ts",
+    "prod": "NODE_ENV=production ts-node server.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -21,6 +21,10 @@
     "@babel/plugin-transform-runtime": "^7.13.10",
     "@babel/preset-env": "^7.13.12",
     "@babel/preset-typescript": "^7.13.0",
+    "@types/express": "^4.17.11",
+    "@types/node": "^14.14.37",
+    "@types/webpack": "^5.28.0",
+    "@types/webpack-dev-server": "^3.11.3",
     "autoprefixer": "^10.2.5",
     "babel-loader": "^8.2.2",
     "clean-webpack-plugin": "^3.0.0",
@@ -33,6 +37,7 @@
     "style-loader": "^2.0.0",
     "terser-webpack-plugin": "^5.1.1",
     "ts-loader": "^8.0.18",
+    "ts-node": "^9.1.1",
     "typescript": "^4.2.3",
     "url-loader": "^4.1.1",
     "vue": "^2.6.12",
