@@ -1,11 +1,3 @@
-<style lang="scss">
-
-  .dashboard {
-
-  }
-
-</style>
-
 <template>
   <div class="dashboard">
     temp dashboard
@@ -13,11 +5,18 @@
 </template>
 
 <script lang="ts">
+import { Component, Vue } from 'vue-property-decorator';
 
-  import Vue from 'vue'
-
-  export default Vue.extend({
-
-  })
-
+@Component({ 
+  name: "Dashboard"
+}) 
+export default class Dashboard extends Vue {} 
 </script>
+
+<style lang="scss">
+
+  .dashboard {
+
+  }
+
+</style>

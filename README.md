@@ -11,6 +11,8 @@ Node v14 base
 - Vue Router v3
 - Vuex v3
 
+:warning: Style의 경우 기본으로 Sass 사용, 필요한 경우 다르게 구성 가능.
+
 ## Usage
 **Install dependencies**
 ```
@@ -32,4 +34,6 @@ npm run start (npm run dev)
 npm run prod
 ```
 
-:gear: Vue.extend 방식 사용, Vue.component 방식을 이용하여 클래스 스타일로 구성 가능.
+## ToDo
+- Class based component 진행
+- 기존에 사용하던 코딩 컨벤션 변경
