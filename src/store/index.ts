@@ -6,7 +6,7 @@ import Vuex from 'vuex';
 Vue.use(Vuex);
 
 export interface IRootState {
-  // snippet: SnippetModule;
+  // snippet: typeof SnippetModule;
 }
 
 export default new Vuex.Store<IRootState>({})

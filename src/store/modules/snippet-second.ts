@@ -1,15 +1,14 @@
 /**
- * snippet
+ * snippet second
  */
-// import { VuexModule, Module, Mutation, Action, getModule } from 'vuex-module-decorators';
-// import store from '@/store';
+// import { VuexModule, Module, Mutation, Action } from 'vuex-module-decorators';
 
-// export interface SnippetState {
+// export interface SnippetSecondState {
 //   data: string;
 // }
 
-// @Module({ dynamic: true, store, namespaced: true, name: 'snippet' }) 
-// class Snippet extends VuexModule implements SnippetState { 
+// @Module({ namespaced: true }) 
+// class SnippetSecondModule extends VuexModule implements SnippetSecondState { 
 //   public data: string = 'snippet'; 
   
 //   @Mutation 
@@ -27,5 +26,4 @@
 //   } 
 // }
 
-// export const SnippetModule = getModule(Snippet);
-
+// export default SnippetSecondModule;
