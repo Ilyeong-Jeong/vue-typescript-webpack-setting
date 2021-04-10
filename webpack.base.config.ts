@@ -2,7 +2,7 @@ import * as path from 'path';
 import * as webpack from 'webpack';
 
 const VueLoaderPlugin   = require('vue-loader/lib/plugin');
-const HtmlWebPackPlugin = require("html-webpack-plugin");
+const HtmlWebPackPlugin = require('html-webpack-plugin');
 
 const webpackBaseConfig: webpack.Configuration = {
 
@@ -16,7 +16,8 @@ const webpackBaseConfig: webpack.Configuration = {
 
   resolve: {
     alias: {
-      vue$: 'vue/dist/vue.esm.js'
+      vue$: 'vue/dist/vue.esm.js',
+      '@': path.join(__dirname, 'src'),
     },
 
     extensions: [ '.vue', '.ts', '.js', '.sass' ],
@@ -67,8 +68,8 @@ const webpackBaseConfig: webpack.Configuration = {
         test: /\.css$/,
         use : [
           'vue-style-loader',
-          "css-loader",
-          "postcss-loader"
+          'css-loader',
+          'postcss-loader'
         ]
       }, 
       
@@ -77,9 +78,9 @@ const webpackBaseConfig: webpack.Configuration = {
         exclude: /node_module/, 
         use    : [
           'vue-style-loader',
-          "css-loader",
-          "postcss-loader",
-          "sass-loader"
+          'css-loader',
+          'postcss-loader',
+          'sass-loader'
         ]
       },   
 

@@ -1,4 +1,4 @@
-import { Configuration } from "webpack";
+import { Configuration } from 'webpack';
 import { merge }         from 'webpack-merge';
 
 import webpackBaseConfig from "./webpack.base.config";

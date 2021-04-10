@@ -1,16 +1,21 @@
-import Vue from "vue";
+import Vue from 'vue';
+import App from '@/App.vue';
 
-import { sync } from 'vuex-router-sync';
+import Router from '@/router';
+import Store  from '@/store';
 
-import Router from "./router";
-import Store  from "./store";
+import { Component } from 'vue-property-decorator';
 
-import "./style/app.scss";
+Component.registerHooks([
+  'beforeRouteEnter',
+  'beforeRouteUpdate',
+  'beforeRouteLeave',
+]);
 
-sync(Store, Router);
+import '@/style/app.scss';
 
 new Vue({
   router: Router,
   store : Store,
-  render: (h) => h("router-view")
+  render: (h) => h(App),
 }).$mount("#app");

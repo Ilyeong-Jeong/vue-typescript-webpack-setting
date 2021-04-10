@@ -7,7 +7,7 @@ interface Configuration extends webpack.Configuration {
   devServer?: WebpackDevServer.Configuration;
 }
 
-import webpackBaseConfig from "./webpack.base.config";
+import webpackBaseConfig from './webpack.base.config';
 
 const port: number = Number(process.env.PORT) || 3000;
 
@@ -20,11 +20,6 @@ module.exports = merge<Configuration>(webpackBaseConfig, {
     port              : port,
     contentBase       : __dirname + '/dist/',
     historyApiFallback: true,
-    watchOptions: {
-      aggregateTimeout: 5000,
-      poll            : 5000,
-      ignored         : 'node_modules',
-    }
   }
 
 });

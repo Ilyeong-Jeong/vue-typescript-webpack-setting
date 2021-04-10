@@ -33,7 +33,3 @@ npm run start (npm run dev)
 ```
 npm run prod
 ```
-
-## ToDo
-- Class based component 진행
-- 기존에 사용하던 코딩 컨벤션 변경

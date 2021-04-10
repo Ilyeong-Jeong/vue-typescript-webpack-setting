@@ -1,13 +1,13 @@
-import Vue       from "vue";
-import VueRouter from "vue-router";
+import Vue       from 'vue';
+import VueRouter from 'vue-router';
 
-import App from "../App.vue";
+import App from '@/App.vue';
 
 Vue.use(VueRouter);
 
 const router = new VueRouter({
-  mode  : "history",
-  base  : "/",
+  mode  : 'history',
+  base  : '/',
   routes: [
     {
       name     : 'root', 
@@ -18,7 +18,7 @@ const router = new VueRouter({
         {
           name     : 'dashboard',
           path     : 'dashboard',
-          component: () => import("../page/Dashboard.vue")          
+          component: () => import('@/page/Dashboard.vue')          
         }
       ]
     },
