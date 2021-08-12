@@ -12,10 +12,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Ilyeong-Jeong/vue-typescript-boilerplate.git"
+    "url": "git+https://github.com/Ilyeong-Jeong/vue-typescript-webpack-setting.git"
   },
   "license": "ISC",
-  "homepage": "https://github.com/Ilyeong-Jeong/vue-typescript-boilerplate#readme",
+  "homepage": "https://github.com/Ilyeong-Jeong/vue-typescript-webpack-setting#readme",
   "devDependencies": {
     "@babel/core": "^7.13.10",
     "@babel/plugin-transform-runtime": "^7.13.10",
