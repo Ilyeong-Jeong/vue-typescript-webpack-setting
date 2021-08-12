@@ -1,5 +1,5 @@
 # vue-typescript-boilerplate
-**Vue와 TypeScript을 base로 한 Boilerplate code**
+**Vue와 TypeScript을 base로 한 Webpack Setting**
 
 ## Tech Stack
 Node v14 base

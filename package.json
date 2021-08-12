@@ -1,7 +1,7 @@
 {
-  "name": "vue-typescript-boilerplate",
+  "name": "vue-typescript-webpack-setting",
   "version": "1.0.0",
-  "description": "Vue TypeScript Boilerplate",
+  "description": "Vue TypeScript Webpack Setting",
   "main": "index.js",
   "scripts": {
     "dev": "NODE_ENV=development webpack serve --config ./webpack.dev.config.ts",
