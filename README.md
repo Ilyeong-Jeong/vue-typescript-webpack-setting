@@ -1,4 +1,4 @@
-# vue-typescript-boilerplate
+# vue-typescript-webpack-setting
 **Vue와 TypeScript을 base로 한 Webpack Setting**
 
 ## Tech Stack
